@@ -24,7 +24,6 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
- 
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
@@ -42,7 +41,6 @@
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
 
- 
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -96,7 +94,6 @@
   --sidebar-ring: var(--ring);
 }
 
-
 .dark {
   --background: oklch(0.12 0.01 280);
   --foreground: oklch(0.98 0 0);
@@ -148,4 +145,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+button,
+a {
+  cursor: pointer;
 }

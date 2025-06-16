@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter } from '@/app/(components)/ui/card';
 import { Button } from '@/app/(components)/ui/button';
 import { Heart, Star, Trash2 } from 'lucide-react';
 import SharedButton from './SharedButton';
+import { useRouter } from 'next/navigation';
 
 interface GameCardProps {
   id?: number;
@@ -41,10 +42,17 @@ export default function GameCard({
   insideImageOnly = false,
   className = '',
 }: GameCardProps) {
+  const router = useRouter();
   const handleWishlistToggle = (e: MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     if (onWishlistToggle) {
       onWishlistToggle(id);
+    }
+  };
+
+  const handleCardClick = () => {
+    if (id) {
+      router.push(`/games/${id}`);
     }
   };
 
@@ -60,6 +68,7 @@ export default function GameCard({
     ${insideImageOnly ? 'p-0' : ''}
     h-[420px]    
   `}
+  onClick={handleCardClick}
 >
 
         {imageUrl && !insideImageOnly && (

@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* About */}
         <div>
-          <h3 className="text-base font-semibold text-foreground mb-2">About GameVerse</h3>
+          <h3 className="text-base font-semibold text-foreground mb-2">About GameFroge</h3>
           <p className="text-muted-foreground">
-            GameVerse is your go-to platform for discovering free-to-play games. Browse, explore, and build your wishlist!
+            GameFroge is your go-to platform for discovering free-to-play games. Browse, explore, and build your wishlist!
           </p>
         </div>
 

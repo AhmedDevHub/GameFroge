@@ -5,11 +5,13 @@ import Link from "next/link";
 import { Gamepad2, Heart, Menu, X, Info } from "lucide-react";
 import { Button } from "@/app/(components)/ui/button";
 import { signOut, useSession } from "next-auth/react";
+import { usePathname } from "next/navigation";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,19 +33,19 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             <Link href="/games">
-              <Button variant="ghost" className="gap-2 cursor-pointer">
+              <Button variant="ghost" className={`gap-2 cursor-pointer ${pathname === '/games' ? 'text-primary bg-accent' : ''}`}>
                 <Gamepad2 className="w-4 h-4" />
                 Games
               </Button>
             </Link>
             <Link href="/about">
-              <Button variant="ghost" className="gap-2 cursor-pointer">
+              <Button variant="ghost" className={`gap-2 cursor-pointer ${pathname === '/about' ? 'text-primary bg-accent' : ''}`}>
                 <Info className="w-4 h-4" />
                 About
               </Button>
             </Link>
             <Link href="/watch-list">
-              <Button variant="ghost" className="gap-2 cursor-pointer">
+              <Button variant="ghost" className={`gap-2 cursor-pointer ${pathname === '/watch-list' ? 'text-primary bg-accent' : ''}`}>
                 <Heart className="w-4 h-4" />
                 Wishlist
               </Button>
@@ -120,7 +122,7 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/95 backdrop-blur-md border-b">
             <Link
               href="/games"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+              className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground ${pathname === '/games' ? 'text-primary bg-accent' : ''}`}
               onClick={toggleMenu}
             >
               <div className="flex items-center gap-2">
@@ -130,7 +132,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/about"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+              className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground ${pathname === '/about' ? 'text-primary bg-accent' : ''}`}
               onClick={toggleMenu}
             >
               <div className="flex items-center gap-2">
@@ -140,7 +142,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/watch-list"
-              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+              className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground ${pathname === '/watch-list' ? 'text-primary bg-accent' : ''}`}
               onClick={toggleMenu}
             >
               <div className="flex items-center gap-2">
@@ -155,7 +157,7 @@ export default function Navbar() {
               <>
                 <Link
                   href="/profile"
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+                  className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground ${pathname === '/profile' ? 'text-primary bg-accent' : ''}`}
                   onClick={toggleMenu}
                 >
                   <div className="flex items-center gap-2">
@@ -188,14 +190,14 @@ export default function Navbar() {
               <>
                 <Link
                   href="/auth/login"
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+                  className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground ${pathname === '/auth/login' ? 'text-primary bg-accent' : ''}`}
                   onClick={toggleMenu}
                 >
                   Login
                 </Link>
                 <Link
                   href="/auth/register"
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+                  className={`block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground ${pathname === '/auth/register' ? 'text-primary bg-accent' : ''}`}
                   onClick={toggleMenu}
                 >
                   Register

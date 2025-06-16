@@ -115,13 +115,12 @@ export default function GamesPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
          {currentGames.map((game) => (
-            <Link key={game.id} href={`/games/${game.id}`}>
-              <GameCard
-                {...game}            
-                isWishlisted={isWishlisted(game.id)}
-                onWishlistToggle={() => toggleWishlist(game)}
-              />
-            </Link>
+            <GameCard
+              key={game.id}
+              {...game}            
+              isWishlisted={isWishlisted(game.id)}
+              onWishlistToggle={() => toggleWishlist(game)}
+            />
           ))}
         </div>
 
