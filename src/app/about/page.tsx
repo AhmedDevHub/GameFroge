@@ -36,7 +36,7 @@ const teamMembers = [
   },
   {
     name: 'Abdelrahim Fathy',
-    role: 'Frontend Developer',
+    role: 'Full Stack Developer',
     linkedin: 'https://www.linkedin.com/in/abdelrahim-fathy-376736215/',
     image: '/Abdo.jpeg'
   },
