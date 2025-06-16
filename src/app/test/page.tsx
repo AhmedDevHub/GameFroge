@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div className="min-h-screen p-8 sm:p-20 font-sans bg-background text-foreground">
       <header className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Game Store</h1>
+        <h1 className="text-3xl font-bold">Game Froge</h1>
         <Link href="/watch-list">
           <SharedButton label="View Wishlist" iconType="heart" />
         </Link>

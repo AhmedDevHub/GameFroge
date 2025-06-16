@@ -11,7 +11,7 @@ export default function LoginPage() {
         <div className="mb-8 flex flex-col items-center">
           <Link href="/" className="mb-2 flex items-center gap-1 text-2xl font-bold text-primary">
             <Gamepad2 className="h-8 w-8" />
-            <span>Game Store</span>
+            <span>Game Froge</span>
           </Link>
           <p className="text-center text-muted-foreground">
             Sign in to your account to continue your gaming journey

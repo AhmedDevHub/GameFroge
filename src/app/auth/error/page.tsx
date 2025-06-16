@@ -41,7 +41,7 @@ function ErrorContent() {
       <div className="mb-8 flex flex-col items-center">
         <Link href="/" className="mb-2 flex items-center gap-1 text-2xl font-bold text-primary">
           <Gamepad2 className="h-8 w-8" />
-          <span>Game Store</span>
+          <span>Game Froge</span>
         </Link>
         <h1 className="text-2xl font-bold text-destructive mb-2">Authentication Error</h1>
         <p className="text-center text-muted-foreground">
@@ -76,7 +76,7 @@ export default function AuthErrorPage() {
           <div className="mb-8 flex flex-col items-center">
             <Link href="/" className="mb-2 flex items-center gap-1 text-2xl font-bold text-primary">
               <Gamepad2 className="h-8 w-8" />
-              <span>Game Store</span>
+              <span>Game Froge</span>
             </Link>
             <h1 className="text-2xl font-bold text-destructive mb-2">Loading...</h1>
           </div>
