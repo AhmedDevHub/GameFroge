@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -16,11 +17,11 @@ export default function Footer() {
         <div>
           <h3 className="text-base font-semibold text-foreground mb-2">Quick Links</h3>
           <ul className="space-y-1">
-            <li><a href="/" className="hover:underline">Home</a></li>
-            <li><a href="/games" className="hover:underline">All Games</a></li>
-            <li><a href="/about" className="hover:underline">About</a></li>
-            <li><a href="/watch-list" className="hover:underline">Wishlist</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/games" className="hover:underline">All Games</Link></li>
+            <li><Link href="/about" className="hover:underline">About</Link></li>
+            <li><Link href="/watch-list" className="hover:underline">Wishlist</Link></li>
+            <li><Link href="#" className="hover:underline">Contact</Link></li>
           </ul>
         </div>
 
@@ -28,25 +29,22 @@ export default function Footer() {
         <div>
           <h3 className="text-base font-semibold text-foreground mb-2">Contact Us</h3>
           <ul className="space-y-1">
-            <li>Email: support@gameverse.com</li>
-            <li>Phone: +1 234 567 890</li>
+            <li>Email: <a href="mailto:ahmed.ashraf0221@gmail.com">ahmed.ashraf0221@gmail.com</a></li>
+            <li>Phone:+20 100 687 7585</li>
             <li>Location: Cairo, Egypt</li>
           </ul>
         </div>
 
         {/* Social Media */}
         <div>
-          <h3 className="text-base font-semibold text-foreground mb-2">Follow Us</h3>
+          <h3 className="text-base font-semibold text-foreground mb-2">Follow me</h3>
           <div className="flex gap-4">
-            <a href="#" className="hover:underline">Facebook</a>
-            <a href="#" className="hover:underline">Twitter</a>
-            <a href="#" className="hover:underline">Instagram</a>
+            <a href="https://www.linkedin.com/in/ahmed-ashraf-0221/" className="hover:underline" target="_blank">LinkedIn</a>
           </div>
         </div>
       </div>
-
       <div className="mt-8 border-t pt-4 text-center text-xs text-muted-foreground">
-        &copy; {new Date().getFullYear()} GameVerse. All rights reserved.
+        &copy; {new Date().getFullYear()} GameFroge. All rights reserved.
       </div>
     </footer>
   )
