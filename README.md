@@ -1,4 +1,5 @@
 # GameFroge
+![Uploading game-froge-rosy.vercel.app_.png…]()
 
 A modern gaming platform built with Next.js and TypeScript, providing a seamless experience for gaming enthusiasts to discover, track, and manage their favorite games.
 
