@@ -58,6 +58,7 @@ export default function ServicesSlider() {
                     src={img}
                     alt={`service-${realIdx}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 300px, 400px"
                     className="object-cover w-full h-full rounded-2xl"
                   />
                 </div>

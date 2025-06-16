@@ -13,17 +13,17 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "https://www.cairo24.com/Upload/libfiles/79/4/940.jpg",
+    image: "/940.webp",
     title: "Art Is Our Game",
     desc: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Nulla Et Nisi Sed Libero Eleifend Semper A Eu Sem. Donec Eget Massa Duis Metus Faucibus Aliquam. Maecenas Quis Risus Ante",
   },
   {
-    image: "https://www.sqorebda3.com/vb/attachments/15666/",
+    image: "/263672.jpg",
     title: "Game World",
     desc: "Discover new adventures and worlds. Join us and be part of the legend!",
   },
   {
-    image: "https://www.sqorebda3.com/vb/attachments/16230/",
+    image: "/346493.jpg",
     title: "Epic Battles Await",
     desc: "Fight, conquer, and become a hero. Your journey starts here!",
   },
@@ -70,7 +70,7 @@ export default function Home() {
         className="relative min-h-[92vh] flex flex-col justify-center items-center overflow-hidden"
         style={{
           backgroundImage:
-            "url(https://c4.wallpaperflare.com/wallpaper/997/1012/970/world-of-warcraft-battle-for-azeroth-video-games-warcraft-alliance-wallpaper-preview.jpg)",
+            "url(/warcraft.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -82,6 +82,8 @@ export default function Home() {
               src={slides[current].image}
               alt={slides[current].title}
               fill
+              priority
+              sizes="100vw"
               className="w-full h-full object-cover rounded-2xl border-4 border-green-700 shadow-xl"
               style={{ filter: "brightness(0.7)" }}
             />

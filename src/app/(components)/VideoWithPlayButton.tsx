@@ -17,6 +17,7 @@ export default function VideoWithPlayButton() {
           <Image
             src={thumbnailUrl}
             fill
+            sizes="(max-width: 768px) 100vw, 520px"
             alt="Video thumbnail"
             className="w-full h-full object-cover"
           />
