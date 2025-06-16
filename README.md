@@ -1,7 +1,11 @@
 # GameFroge
-![GameFroge](/game-froge-rosy.vercel.app_.png)
+![web1](https://github.com/user-attachments/assets/3853f80e-40bb-4d70-a508-751fcba1dae9)
+![web2](https://github.com/user-attachments/assets/3d783362-1100-477f-bf12-985cf25b09c8)
+![web3](https://github.com/user-attachments/assets/4ab7bdff-1177-4cb8-8993-199dbcc2eeab)
 
-[![Deployed with Vercel](https://vercelbadge.vercel.app/api/ahmed-ashrafs-projects-c5b4265c/game-froge)](https://game-froge.vercel.app)
+
+[![Live on Vercel](https://img.shields.io/badge/Live%20Site-Vercel-blue?style=for-the-badge)](https://game-froge-rosy.vercel.app/)
+
 
 Welcome to GameFroge - Your Ultimate Gaming Companion! 🎮
 
