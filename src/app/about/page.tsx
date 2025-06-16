@@ -167,7 +167,7 @@ export default function About() {
                       alt={member.name}
                       width={96}
                       height={96}
-                      className="rounded-full object-cover w-24 h-24"
+                      className="rounded-full object-cover"
                       onError={(e) => {
                         e.currentTarget.src = `https://ui-avatars.com/api/?name=${member.name.replace(' ', '+')}&background=random`;
                       }}
