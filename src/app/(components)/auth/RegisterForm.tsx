@@ -120,7 +120,7 @@ export default function RegisterForm() {
               <Input
                 id="name"
                 type="text"
-                placeholder="Ali Mohamed"
+                placeholder="Enter your name"
                 className={`pl-10 ${
                   errors.name ? "border-destructive ring-destructive/50" : ""
                 }`}
