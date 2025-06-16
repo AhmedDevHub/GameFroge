@@ -12,7 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import { AtSign, Eye, EyeOff, KeyRound, Loader2 } from "lucide-react";
+import { AtSign, Eye, EyeOff, KeyRound } from "lucide-react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Link from "next/link";
