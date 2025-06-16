@@ -8,7 +8,7 @@ import { Button } from '@/app/(components)/ui/button';
 import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { fetshAllData } from '@/lib/data';
 import { Input } from '@/app/(components)/ui/input';
-import Link from 'next/link';
+import Loader from '../(components)/shared/Loader';
 
 interface ApiGame {
   id: number;
@@ -81,7 +81,7 @@ export default function GamesPage() {
   const currentGames = filteredGames.slice(startIndex, endIndex);
 
   if (loading) {
-    return <div className="p-8 text-center">Loading games...</div>;
+    return <Loader className="p-8 text-center"/>;
   }
 
   if (error) {

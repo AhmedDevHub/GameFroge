@@ -19,6 +19,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { signIn } from "next-auth/react";
 import { toast } from "sonner";
+import Loader from "@/app/(components)/shared/Loader";
 
 export default function RegisterForm() {
   const [loading, setLoading] = useState(false);
@@ -235,10 +236,7 @@ export default function RegisterForm() {
             disabled={loading}
           >
             {loading ? (
-              <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Creating account...
-              </>
+              <Loader />
             ) : (
               "Create account"
             )}

@@ -6,6 +6,7 @@ import { Gamepad2, Heart, Menu, X, Info } from "lucide-react";
 import { Button } from "@/app/(components)/ui/button";
 import { signOut, useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
+import Loader from "@/app/(components)/shared/Loader";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -50,7 +51,7 @@ export default function Navbar() {
                 Wishlist
               </Button>
             </Link>
-            {status === "loading" && <p>Loading...</p>}
+            {status === "loading" && <Loader className="text-sm" />}
             {status === "authenticated" ? (
               <>
                 <div className="flex items-center gap-3">
@@ -151,7 +152,7 @@ export default function Navbar() {
               </div>
             </Link>
 
-            {status === "loading" && <p className="px-3 py-2">Loading...</p>}
+            {status === "loading" && <Loader className="px-3 py-2" />}
 
             {status === "authenticated" ? (
               <>

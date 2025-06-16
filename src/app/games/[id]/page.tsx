@@ -1,4 +1,3 @@
-
 'use client';
 import { fetshGameDetails } from '@/lib/data';
 import Image from 'next/image';
@@ -17,6 +16,7 @@ import { toast } from 'sonner';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
+import Loader from '@/app/(components)/shared/Loader';
 
 interface Game {
   id: number;
@@ -105,13 +105,7 @@ export default  function GameDetailsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-          className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full"
-        />
-      </div>
+      <Loader className="min-h-screen"/>
     );
   }
 

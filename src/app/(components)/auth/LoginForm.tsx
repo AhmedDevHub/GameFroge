@@ -20,6 +20,7 @@ import { Separator } from "@/components/ui/separator";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import Loader from "@/app/(components)/shared/Loader";
 
 export default function LoginForm() {
   const [loading, setLoading] = useState(false);
@@ -158,10 +159,7 @@ export default function LoginForm() {
             disabled={loading}
           >
             {loading ? (
-              <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Logging in...
-              </>
+              <Loader />
             ) : (
               "Login"
             )}
