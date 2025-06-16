@@ -44,7 +44,8 @@
 
 .teamCard:hover {
   transform: translateY(-0.25rem);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .teamImage {
@@ -52,13 +53,15 @@
   overflow: hidden;
   border-width: 2px;
   border-color: var(--primary);
-  width: 6rem;
-  height: 6rem;
   margin-bottom: 1rem;
 }
 
 .ctaSection {
-  background: linear-gradient(to right, rgba(var(--primary-rgb), 0.1), rgba(var(--secondary-rgb), 0.1));
+  background: linear-gradient(
+    to right,
+    rgba(var(--primary-rgb), 0.1),
+    rgba(var(--secondary-rgb), 0.1)
+  );
   border-radius: 0.75rem;
   padding: 2rem;
   text-align: center;
