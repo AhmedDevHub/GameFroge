@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Gamepad2 } from 'lucide-react';
 import { Suspense } from 'react';
-import Loader from '../(components)/shared/Loader';
+import Loader from '../../(components)/shared/Loader';
 
 function ErrorContent() {
   const searchParams = useSearchParams();
