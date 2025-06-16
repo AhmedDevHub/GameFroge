@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -13,37 +12,37 @@ import Image from 'next/image';
 const teamMembers = [
   {
     name: 'Omar Elsharkawy',
-    role: 'Frontend Developer',
+    role: 'Full Stack Developer',
     linkedin: 'https://www.linkedin.com/in/omar-elsharkawii-6b9942238/',
     image: '/omar.png'
   },
   {
     name: 'Ali Mohamed',
-    role: 'Backend Developer',
+    role: 'Full Stack Developer',
     linkedin: 'https://www.linkedin.com/in/ali-mohamed-68a0a3239/',
     image: '/Ali.jpeg'
   },
   {
     name: 'Nada Ahmed',
-    role: '.NET Developer',
+    role: 'Full Stack Developer',
     linkedin: 'https://www.linkedin.com/in/nada-ahmed-dotnetdeveloper5219/',
     image: '/Nada.jpeg'
   },
   {
     name: 'Anas Magdy',
-    role: 'Full Stack Developer',
+    role: 'Frontend Developer',
     linkedin: 'https://www.linkedin.com/in/anas-magdy/',
     image: '/Anas.jpeg'
   },
   {
     name: 'Abdelrahim Fathy',
-    role: 'UI/UX Designer',
+    role: 'Frontend Developer',
     linkedin: 'https://www.linkedin.com/in/abdelrahim-fathy-376736215/',
     image: '/Abdo.jpeg'
   },
   {
     name: 'Ahmed Ashraf',
-    role: 'DevOps Engineer',
+    role: 'Full Stack Developer',
     linkedin: 'https://www.linkedin.com/in/ahmedashrraf/',
     image: '/Ahmed.jpeg'
   }
@@ -166,6 +165,8 @@ export default function About() {
                     <Image
                       src={member.image}
                       alt={member.name}
+                      width={96}
+                      height={96}
                       className="rounded-full object-cover w-24 h-24"
                       onError={(e) => {
                         e.currentTarget.src = `https://ui-avatars.com/api/?name=${member.name.replace(' ', '+')}&background=random`;

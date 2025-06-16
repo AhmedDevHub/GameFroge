@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Gamepad2, Heart, Menu, X } from "lucide-react";
+import { Gamepad2, Heart, Menu, X, Info } from "lucide-react";
 import { Button } from "@/app/(components)/ui/button";
 import { signOut, useSession } from "next-auth/react";
 
@@ -34,6 +34,12 @@ export default function Navbar() {
               <Button variant="ghost" className="gap-2 cursor-pointer">
                 <Gamepad2 className="w-4 h-4" />
                 Games
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button variant="ghost" className="gap-2 cursor-pointer">
+                <Info className="w-4 h-4" />
+                About
               </Button>
             </Link>
             <Link href="/watch-list">
@@ -120,6 +126,16 @@ export default function Navbar() {
               <div className="flex items-center gap-2">
                 <Gamepad2 className="w-4 h-4" />
                 Games
+              </div>
+            </Link>
+            <Link
+              href="/about"
+              className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent hover:text-accent-foreground"
+              onClick={toggleMenu}
+            >
+              <div className="flex items-center gap-2">
+                <Info className="w-4 h-4" />
+                About
               </div>
             </Link>
             <Link
