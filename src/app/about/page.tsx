@@ -14,7 +14,7 @@ const teamMembers = [
     name: 'Omar Elsharkawy',
     role: 'Full Stack Developer',
     linkedin: 'https://www.linkedin.com/in/omar-elsharkawii-6b9942238/',
-    image: '/omar.png'
+    image: '/omarsharkawy.png'
   },
   {
     name: 'Ali Mohamed',
