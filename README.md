@@ -1,6 +1,19 @@
 # GameFroge
+![Uploading game-froge-rosy.vercel.app_.png…]()
 
-A modern gaming platform built with Next.js and TypeScript, providing a seamless experience for gaming enthusiasts to discover, track, and manage their favorite games.
+[![Deployed with Vercel](https://vercelbadge.vercel.app/api/anas-magdy/GameFroge)](https://game-froge-rosy.vercel.app)
+
+Welcome to GameFroge - Your Ultimate Gaming Companion! 🎮
+
+GameFroge is a modern, feature-rich gaming platform designed to enhance your gaming experience. With a sleek, responsive interface and powerful features, it helps you:
+
+- Discover new games with advanced search and filtering
+- Track your favorite games in your personal watch list
+- Connect with other gaming enthusiasts
+- Stay updated with the latest gaming news and releases
+- Manage your gaming profile with customizable settings
+
+Built with cutting-edge technologies and best practices, GameFroge offers a seamless, performant experience for gaming enthusiasts of all types.
 
 ## Features
 
