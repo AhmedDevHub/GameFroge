@@ -1,7 +1,7 @@
 # GameFroge
-![Uploading game-froge-rosy.vercel.app_.png…]()
+![GameFroge](/game-froge-rosy.vercel.app_.png)
 
-[![Deployed with Vercel](https://vercelbadge.vercel.app/api/anas-magdy/GameFroge)](https://game-froge-rosy.vercel.app)
+[![Deployed with Vercel](https://vercelbadge.vercel.app/api/ahmed-ashrafs-projects-c5b4265c/game-froge)](https://game-froge.vercel.app)
 
 Welcome to GameFroge - Your Ultimate Gaming Companion! 🎮
 
