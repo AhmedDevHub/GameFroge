@@ -24,7 +24,8 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold">
-            Game Froge            </Link>
+            Game Froge            
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
