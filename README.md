@@ -53,7 +53,7 @@ Built with cutting-edge technologies and best practices, GameFroge offers a seam
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/anas-magdy/GameFroge.git
+git clone https://github.com/ahmeddevhub/GameFroge.git
 ```
 
 2. Install dependencies:
